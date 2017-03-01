@@ -48,7 +48,7 @@ svar = "ja"
 while svar == "ja":
     print("Liður 1 - Farenheit eða Celcius ")
     print("Liður 2 - Kelvin eða Celsius ")
-    print("Liður 3 - ")
+    print("Liður 3 - KG eða GR")
     print("Liður 4 - Tommur eða Sentimetrar ")
     print("Liður 5 - Gallons eða Litrar")
     print("Liður 6 - Hæta")
@@ -92,18 +92,18 @@ while svar == "ja":
             print("Villa")
 
     if spurning == "3":
-#forritið spyr notanda hvort hann vilji breyta í kg í g eða öfugt
+#forritið spyr notanda hvort hann vilji breyta í kg í g eða öfugt / Ekki rett
         hvort = input("hvort viltu breyta yfir í celsius eða kelvin? KG/GR ")
 
         if hvort == "KG" or hvort == "kg":
-            cel = float(input("hversu heitt er úti í kg? "))
+            kg = float(input("hversu heitt er úti í kg? "))
 
-            print("Þetta er í kg =", round(kelvin(cel), 2))
+            print("Þetta er í kg =", round(gr(kg), 2))
 
         elif hvort == "GR" or hvort == "gr":
-            kel = float(input("hversu heitt er úti í g? "))
+            gr = float(input("hversu heitt er úti í g? "))
 
-            print("Þetta er í gr =", round(celsius(kel), 2))
+            print("Þetta er í gr =", round(kg(gr), 2))
 
     if spurning == "4":
 #forritið spyr notanda hvort hann ilji breyta tommum í sentimetra eða öfugt
